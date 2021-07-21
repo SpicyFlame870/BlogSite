@@ -1,6 +1,8 @@
 <%- include("partials/header") -%>
 
-<h1>Hello</h1>
+<% if(posts.length==0){ %>
+    <h1>Hello</h1>
+<%  }               %>
 <p><%= homeContent %></p>
 
 <%  posts.forEach(function(post){ %>
